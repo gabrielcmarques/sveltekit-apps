@@ -23,7 +23,7 @@ export const dictionary = {
 		"/media/[...file]/[width]/[height]": [6],
 		"/posts": [7,[2]],
 		"/posts/create": [8,[2],[,3]],
-		"/posts/[slug]": [9,[2]]
+		"/posts/[slug=slug]": [9,[2]]
 	};
 
 export const hooks = {
