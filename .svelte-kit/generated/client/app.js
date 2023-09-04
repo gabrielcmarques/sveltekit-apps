@@ -18,11 +18,11 @@ export const server_loads = [];
 
 export const dictionary = {
 		"/": [4],
-		"/[[lang]]/about": [10],
-		"/image/[witdh]x[height]": [5],
-		"/media/[...file]/[width]/[height]": [6],
-		"/posts": [7,[2]],
-		"/posts/create": [8,[2],[,3]],
+		"/[[lang]]/about": [5],
+		"/image/[witdh]x[height]": [6],
+		"/media/[...file]/[width]/[height]": [7],
+		"/posts": [8,[2]],
+		"/posts/create": [10,[2],[,3]],
 		"/posts/[slug=slug]": [9,[2]]
 	};
 
