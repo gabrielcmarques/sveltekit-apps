@@ -14,7 +14,7 @@ export const nodes = [
 	() => import('./nodes/10')
 ];
 
-export const server_loads = [];
+export const server_loads = [2];
 
 export const dictionary = {
 		"/": [4],
@@ -23,7 +23,7 @@ export const dictionary = {
 		"/media/[...file]/[width]/[height]": [7],
 		"/posts": [8,[2]],
 		"/posts/create": [10,[2],[,3]],
-		"/posts/[slug=slug]": [9,[2]]
+		"/posts/[slug]": [~9,[2]]
 	};
 
 export const hooks = {

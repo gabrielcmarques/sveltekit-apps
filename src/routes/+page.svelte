@@ -1,30 +1,36 @@
 <script lang="ts">
-	import type { Post } from '@prisma/client'
-	async function getPosts() {
-		const response = await fetch('api/posts')
-		const posts: Post[] = await response.json()
-		return posts
+	import { invalidate, invalidateAll } from '$app/navigation'
+	import type { PageData } from "./$types"
+
+	export let data: PageData
+
+	$: ({ posts } = data)
+
+	function rerunLoadFunction() {
+		//a )
+		invalidate('posts')
+
+		//b )
+		// invalidate('api/posts')
+
+		//c )
+		// invalidate(url => url.href.includes('posts'))
+
+		//d )
+		// invalidateAll()
 	}
 </script>
 
 <h1>Posts</h1>
 
-{#await getPosts()}
-	<p>Loading...</p>
-{:then posts}
-	<p>Showing {posts.length} posts</p>
+<button on:click={rerunLoadFunction}>Rerun</button>
 
-	{#each posts as { slug, title }}
-		<ul>
-			<li>
-				<a href="/posts/{slug}">{title}</a>
-			</li>
-		</ul>
-	{/each}
+<p>Showing {posts.length} posts.</p>
 
-	<!-- <pre>
-	{JSON.stringify(posts, null, 2)}
-</pre> -->
-{:catch error}
-	<p>{error.message}</p>
-{/await}
+{#each posts as {slug, title}}
+<ul>
+	<li>
+		<a href="/posts/{slug}">{title}</a>
+	</li>
+</ul>
+{/each}
