@@ -27,9 +27,12 @@
  */
 declare module '$env/static/private' {
 	export const DATABASE_URL: string;
+	export const npm_package_devDependencies__types_node: string;
+	export const npm_package_devDependencies_ts_node: string;
 	export const npm_package_devDependencies_vitest: string;
 	export const USER: string;
 	export const npm_config_user_agent: string;
+	export const BUN_INSTALL: string;
 	export const GIT_ASKPASS: string;
 	export const npm_package_devDependencies_vite: string;
 	export const npm_node_execpath: string;
@@ -59,11 +62,14 @@ declare module '$env/static/private' {
 	export const COLORTERM: string;
 	export const npm_package_devDependencies_typescript: string;
 	export const NVM_DIR: string;
+	export const WAYLAND_DISPLAY: string;
 	export const npm_package_scripts_dev: string;
 	export const npm_package_devDependencies__playwright_test: string;
 	export const npm_package_devDependencies_prettier: string;
 	export const LOGNAME: string;
 	export const npm_package_type: string;
+	export const PULSE_SERVER: string;
+	export const WSL_INTEROP: string;
 	export const NAME: string;
 	export const _: string;
 	export const _P9K_SSH_TTY: string;
@@ -75,13 +81,16 @@ declare module '$env/static/private' {
 	export const npm_package_dependencies__prisma_client: string;
 	export const npm_config_registry: string;
 	export const TERM: string;
-	export const npm_config_node_gyp: string;
 	export const PATH: string;
 	export const npm_package_name: string;
+	export const npm_package_devDependencies_prisma: string;
+	export const npm_package_dependencies__sveltejs_adapter_auto: string;
 	export const NODE: string;
+	export const XDG_RUNTIME_DIR: string;
 	export const WT_SESSION: string;
 	export const npm_package_scripts_test_integration: string;
 	export const npm_config_frozen_lockfile: string;
+	export const DISPLAY: string;
 	export const npm_package_scripts_test_unit: string;
 	export const LANG: string;
 	export const VSCODE_INJECTION: string;
@@ -109,13 +118,13 @@ declare module '$env/static/private' {
 	export const NVM_CD_FLAGS: string;
 	export const _P9K_TTY: string;
 	export const ZDOTDIR: string;
-	export const npm_package_devDependencies__sveltejs_adapter_auto: string;
 	export const npm_command: string;
 	export const PNPM_SCRIPT_SRC_DIR: string;
 	export const npm_package_scripts_preview: string;
 	export const npm_package_devDependencies_prettier_plugin_svelte: string;
-	export const npm_package_dependencies_minimatch: string;
 	export const HOSTTYPE: string;
+	export const WSL2_GUI_APPS_ENABLED: string;
+	export const PNPM_HOME: string;
 	export const WSLENV: string;
 	export const INIT_CWD: string;
 	export const NODE_ENV: string;
@@ -149,9 +158,12 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		DATABASE_URL: string;
+		npm_package_devDependencies__types_node: string;
+		npm_package_devDependencies_ts_node: string;
 		npm_package_devDependencies_vitest: string;
 		USER: string;
 		npm_config_user_agent: string;
+		BUN_INSTALL: string;
 		GIT_ASKPASS: string;
 		npm_package_devDependencies_vite: string;
 		npm_node_execpath: string;
@@ -181,11 +193,14 @@ declare module '$env/dynamic/private' {
 		COLORTERM: string;
 		npm_package_devDependencies_typescript: string;
 		NVM_DIR: string;
+		WAYLAND_DISPLAY: string;
 		npm_package_scripts_dev: string;
 		npm_package_devDependencies__playwright_test: string;
 		npm_package_devDependencies_prettier: string;
 		LOGNAME: string;
 		npm_package_type: string;
+		PULSE_SERVER: string;
+		WSL_INTEROP: string;
 		NAME: string;
 		_: string;
 		_P9K_SSH_TTY: string;
@@ -197,13 +212,16 @@ declare module '$env/dynamic/private' {
 		npm_package_dependencies__prisma_client: string;
 		npm_config_registry: string;
 		TERM: string;
-		npm_config_node_gyp: string;
 		PATH: string;
 		npm_package_name: string;
+		npm_package_devDependencies_prisma: string;
+		npm_package_dependencies__sveltejs_adapter_auto: string;
 		NODE: string;
+		XDG_RUNTIME_DIR: string;
 		WT_SESSION: string;
 		npm_package_scripts_test_integration: string;
 		npm_config_frozen_lockfile: string;
+		DISPLAY: string;
 		npm_package_scripts_test_unit: string;
 		LANG: string;
 		VSCODE_INJECTION: string;
@@ -231,13 +249,13 @@ declare module '$env/dynamic/private' {
 		NVM_CD_FLAGS: string;
 		_P9K_TTY: string;
 		ZDOTDIR: string;
-		npm_package_devDependencies__sveltejs_adapter_auto: string;
 		npm_command: string;
 		PNPM_SCRIPT_SRC_DIR: string;
 		npm_package_scripts_preview: string;
 		npm_package_devDependencies_prettier_plugin_svelte: string;
-		npm_package_dependencies_minimatch: string;
 		HOSTTYPE: string;
+		WSL2_GUI_APPS_ENABLED: string;
+		PNPM_HOME: string;
 		WSLENV: string;
 		INIT_CWD: string;
 		NODE_ENV: string;
