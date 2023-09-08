@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"prisma": {
-		"seed": "pnpx vite-node prisma/seed.ts"
+		"seed": "npx vite-node prisma/seed.ts"
 	},
 	"scripts": {
 		"dev": "vite dev",
@@ -28,7 +28,6 @@
 		"eslint-plugin-svelte": "^2.33.0",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
-		"prisma": "^5.2.0",
 		"svelte": "^4.2.0",
 		"svelte-check": "^3.5.1",
 		"ts-node": "^10.9.1",
@@ -39,7 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@prisma/client": "^5.2.0",
+		"@prisma/client": "5.2.0",
 		"@sveltejs/adapter-auto": "^2.1.0"
 	}
 }

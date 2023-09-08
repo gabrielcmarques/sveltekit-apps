@@ -23,7 +23,6 @@ function slugify(text: string) {
 async function main() {
 	const posts = await getPosts()
 
-
 	for (const post of posts) {
 		await db.post.create({
 			data: {
