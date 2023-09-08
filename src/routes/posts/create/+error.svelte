@@ -1,6 +1,5 @@
-
 <script lang="ts">
-    import { page } from '$app/stores'
+	import { page } from '$app/stores'
 </script>
 
 <h1>Boom</h1>
@@ -12,4 +11,3 @@
 <pre>
     {JSON.stringify($page)}
 </pre>
-

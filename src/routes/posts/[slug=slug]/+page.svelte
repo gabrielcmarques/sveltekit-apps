@@ -1,7 +1,7 @@
 <!-- SLUG -->
 
 <script lang="ts">
-    import { page } from "$app/stores";
+	import { page } from '$app/stores'
 </script>
 
 <h1>Post</h1>

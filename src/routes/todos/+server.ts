@@ -1,5 +1,4 @@
 import { addTodo, removeTodo } from '$lib/server/database'
-import { json } from 'stream/consumers'
 import type { RequestHandler } from './$types'
 
 type Data = {
@@ -39,12 +38,12 @@ export const DELETE: RequestHandler = async ({ request }) => {
 			success: false,
 			errors: {
 				id: 'required'
-			}			
+			}
 		}
 		return new Response(JSON.stringify(errorReponse), {
-            status: 400,
-            headers: { 'Content-Type': 'application/json' }
-        })
+			status: 400,
+			headers: { 'Content-Type': 'application/json' }
+		})
 	}
 
 	const todoId = parseInt(todoIdValue as string, 10)

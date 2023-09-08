@@ -21,18 +21,37 @@ function slugify(text: string) {
 }
 
 async function main() {
-	const posts = await getPosts()
+	try {
+		const posts = await getPosts()
 
-
-	for (const post of posts) {
-		await db.post.create({
-			data: {
-				title: post.title,
-				content: post.body,
-				slug: slugify(post.title)
-			}
-		})
+		for (const post of posts) {
+			await db.post.create({
+				data: {
+					title: post.title,
+					content: post.body,
+					slug: slugify(post.title)
+				}
+			})
+		}
+	} catch (error) {
+		console.error(error)
+	} finally {
+		await db.$disconnect()
 	}
 }
+
+// async function main() {
+// 	const posts = await getPosts()
+
+// 	for (const post of posts) {
+// 		await db.post.create({
+// 			data: {
+// 				title: post.title,
+// 				content: post.body,
+// 				slug: slugify(post.title)
+// 			}
+// 		})
+// 	}
+// }
 
 main()

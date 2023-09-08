@@ -21,13 +21,6 @@
 	}
 </script>
 
-<h1>Forms</h1>
-<form action="/login" method="GET">
-	<input type="text" name="user" />
-	<input type="password" name="password" />
-	<button type="submit">Login</button>
-</form>
-
 <h1>Posts</h1>
 
 <button on:click={rerunLoadFunction}>Rerun</button>

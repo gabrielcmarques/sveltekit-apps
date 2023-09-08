@@ -1,10 +1,4 @@
 module.exports = {
-	settings: {
-		'svelte3/ignore-warnings': ({ code }) =>
-			code === 'a11y-missing-content' ||
-			code === 'a11y-missing-attribute' ||
-			code === 'a11y-click-events-have-key-events'
-	},
 	root: true,
 	extends: [
 		'eslint:recommended',
