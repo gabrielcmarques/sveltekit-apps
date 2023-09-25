@@ -14,7 +14,8 @@
 </hgroup>
 
 <div class="content">
-	{@html data.post.content}
+	<p>Test html</p>
+	<!-- {@html data.post.content} -->
 </div>
 
 <div class="posts">

@@ -19,7 +19,7 @@
 	{#if form?.errors?.password}
 		<p class="error">Password is required</p>
 	{/if}
-	
+
 	<button type="submit">Login</button>
 </form>
 
